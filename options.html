@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      font-family: system-ui, sans-serif;
+      padding: 16px;
+      min-width: 350px;
+    }
+    label {
+      display: block;
+      font-size: 13px;
+      font-weight: 600;
+      margin-bottom: 6px;
+    }
+    input {
+      width: 100%;
+      padding: 6px 8px;
+      font-size: 13px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    .hint {
+      font-size: 11px;
+      color: #666;
+      margin-top: 4px;
+    }
+    button {
+      margin-top: 12px;
+      padding: 6px 16px;
+      font-size: 13px;
+      cursor: pointer;
+    }
+    .status {
+      margin-top: 8px;
+      font-size: 12px;
+      color: green;
+    }
+  </style>
+</head>
+<body>
+  <label for="sso-url">SSO Portal URL</label>
+  <input type="url" id="sso-url" placeholder="https://d-xxxxxxxxxx.awsapps.com/start#/">
+  <div class="hint">Your AWS IAM Identity Center start URL</div>
+  <button id="save">Save</button>
+  <div id="status" class="status"></div>
+  <script src="options.js"></script>
+</body>
+</html>
